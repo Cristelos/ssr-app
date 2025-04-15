@@ -1,0 +1,21 @@
+<h1 class="text-3xl">Listado de Pokemons</h1>
+<h2 class="text-xl">Página actual</h2>
+
+<hr class="my-2">
+
+@if(isLoading()){
+
+  <pokemon-list-skeleton></pokemon-list-skeleton>
+}
+@if(isLoading()) {
+  <pokemon-list></pokemon-list>
+
+}
+
+
+<!--Todo: pokemon list skeleton-->
+
+<div class="flex justify-between">
+<button class="mt-2">Anteriores</button>
+<button class="mt-2">Siguientes</button>
+</div>
