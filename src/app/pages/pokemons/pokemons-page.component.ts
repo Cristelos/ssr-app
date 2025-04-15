@@ -7,16 +7,17 @@ import { PokemonListSkeletonComponent } from "./ui/pokemon-list-skeleton/pokemon
   standalone: true,
   imports: [
     PokemonListComponent,
-    PokemonListSkeletonComponent],
+    //PokemonListSkeletonComponent
+    ],
   templateUrl: './pokemons-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class PokemonsPageComponent implements OnInit {
-  public isLoading = signal(true);
+  // public isLoading = signal(true);
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.isLoading.set(false)
-    }, 1500);
+    // setTimeout(() => {
+    //   this.isLoading.set(false)
+    // }, 5000);
   }
 }

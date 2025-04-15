@@ -3,14 +3,13 @@
 
 <hr class="my-2">
 
-@if(isLoading()){
+<!-- @if(!isLoading()){ -->
 
-  <pokemon-list-skeleton></pokemon-list-skeleton>
-}
-@if(isLoading()) {
   <pokemon-list></pokemon-list>
+<!-- } @else { -->
+  <!-- <pokemon-list-skeleton></pokemon-list-skeleton> -->
 
-}
+<!-- } -->
 
 
 <!--Todo: pokemon list skeleton-->
