@@ -18,7 +18,7 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
   },
   {
-    path: 'pokemons',
+    path: 'pokemons/page/:page',
     renderMode: RenderMode.Prerender,
   },
   {
